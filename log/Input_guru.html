@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Input Guru</title>
+</head>
+<body>
+<form action="simpan_guru.php" method = "POST" enctype="multipart/form-data">
+<table border = 7>
+<Tr>
+<td> NUPTK</td><td>:</td><td><input type="Text" Name= "nuptk"></td>
+</tr>
+<Tr>
+<td> Nama</td><td>:</td><td><input type="Text" Name= "nama"></td>
+</tr>
+<tr>
+<td>Mata Pelajaran</td><td>:</td><td><input type="Text" name="mat_pel"></td>
+</tr>
+<tr>
+<td>Alamat</td><td>:</td><td><textarea name="alamat"></textarea></td>
+</tr>
+<tr>
+<td>agama</td><td>:</td><td>
+<select name="agama">
+	<option value="Islam">Islam</option>
+	<option value="kristen">Kristen</option>
+	<option value="Hindu">Hindu</option>
+	<option value="Budha">Budha</option>
+	<option value="Lain-Lain">Lain-lain</option>
+</select>
+</td>
+</tr>
+<Tr>
+<td>Gambar</td><td>:</td><td><input type="File" Name= "gambar" ></td>
+</tr>
+<tr>
+<td colspan = "3" align=center>
+	<input type="Submit" name= "kirim" value = "Simpan">
+	<input type="Reset" name= "reset" value = "Batal"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

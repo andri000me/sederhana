@@ -1,0 +1,14 @@
+if($FILES['gambar']['size']>0 && $FILES['gambar']['error']==0)
+{
+$filename=$_FILES['gambar']['name'];
+$mime_type=$_FILES['gambar']['type'];
+$tmp_file=fopen($_FILES['gambar'['tmp_name'],'rb');
+$file_Data=fread($tmp_file,filesizes($_FILES['gambar']['tmp_name']$file_data=addslashes($file_data);
+}
+
+
+$status= mysql_query("select status from member where username='$username'");}
+
+else{
+header("location:user/homes.php");
+}if $status>=0 {

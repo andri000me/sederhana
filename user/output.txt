@@ -1,0 +1,29 @@
+<?php
+include 'koneksi.php';
+
+echo '<center><table border=10 valign=top>';
+echo "<tr><td colspan=4><center>Daftar Sekolah</center></td></tr><tr><td>Username</td><td>Nama Lengkap</td><td>Email</td><td>Jenis Kelamin</td><td>Sekolah/Universitas</td><td>Jawaban</td><td>Pertanyaan</td><td>join</td><td>Ulang tahun</td><td>Status</td></tr>";
+
+$sql=mysql_query("select username, nama_lengkap, email, gender, sekolah, jawaban, pertanyaan, join, ulang_tahun, status from member");
+
+while($jum=mysql_fetch_array($sql))
+{
+echo '<tr>';
+echo '<td>'.$jum[0].'</td>';
+echo '<td>'.$jum[1].'</td>';
+echo '<td>'.$jum[2].'</td>';
+echo '<td>'.$jum[3].'</td>';
+echo '<td>'.$jum[4].'</td>';
+echo '<td>'.$jum[5].'</td>';
+echo '<td>'.$jum[6].'</td>';
+echo '<td>'.$jum[7].'</td>';
+echo '<td>'.$jum[8].'</td>';
+echo '<td>'.$jum[9].'</td>';
+
+
+echo '</tr>';
+}
+
+echo '</table></center>';
+
+?>
